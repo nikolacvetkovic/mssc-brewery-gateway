@@ -13,7 +13,7 @@ public class LoadBalancedRouteConfig {
     @Bean
     public RouteLocator loadBalancedRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(r -> r.path("/api/v1/beer*","/api/v1/beer/*","/api/v1/beerUpc/*")
+                .route(r -> r.path("/api/v1/beer*","/api/v1/beer/*","/api/v1/beer/upc/*")
                         .uri("lb://beer-service"))
                 .route(r -> r.path("/api/v1/customers/**")
                         .uri("lb://beer-order-service"))

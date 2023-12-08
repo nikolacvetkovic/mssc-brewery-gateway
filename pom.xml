@@ -14,7 +14,7 @@
     <artifactId>brewery-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>mssc-brewery-gateway</name>
+    <name>brewery-gateway</name>
     <description>mssc-brewery-gateway</description>
 
     <properties>
